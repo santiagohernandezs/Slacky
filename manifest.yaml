@@ -1,0 +1,19 @@
+display_information:
+  name: Slacky
+features:
+  bot_user:
+    display_name: Slacky
+    always_online: true
+  slash_commands:
+    # - command: /admins
+    #   description: Mention all admins in your workspace.
+    #   should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - users:read
+settings:
+  interactivity:
+    is_enabled: true
+  socket_mode_enabled: true

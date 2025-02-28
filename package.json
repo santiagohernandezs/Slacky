@@ -1,0 +1,24 @@
+{
+  "name": "slacky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node --env-file=.env dist/index.js\"",
+    "start": "node --env-file=.env -r ts-node/register ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^4.2.0",
+    "@slack/rtm-api": "^7.0.2",
+    "@slack/web-api": "^7.8.0",
+    "tsc-watch": "^6.2.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
+}
