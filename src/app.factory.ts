@@ -15,7 +15,7 @@ export class AppFactory {
 			appToken: process.env.APP_TOKEN,
 			socketMode: true,
 			port: Number.parseInt(process.env.PORT as string, 10) || 3000,
-			logLevel: LogLevel.DEBUG,
+			// logLevel: LogLevel.DEBUG,
 		});
 	}
 }
